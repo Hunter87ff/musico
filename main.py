@@ -1,3 +1,4 @@
+import os
 import nextcord
 from nextcord import Interaction, SlashOption, ChannelType
 from nextcord.abc import GuildChannel
