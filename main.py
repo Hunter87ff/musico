@@ -2,8 +2,8 @@ import nextcord
 from nextcord import Interaction, SlashOption, ChannelType
 from nextcord.abc import GuildChannel
 from nextcord.ext import commands
-from wavelink.ext import spotify
 import wavelink
+from wavelink.ext import spotify
 import datetime
 import os     
 
