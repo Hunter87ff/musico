@@ -5,6 +5,7 @@ from nextcord.ext import commands
 from wavelink.ext import spotify
 import wavelink
 import datetime
+import os
 
 bot = commands.Bot(command_prefix='.')
 
@@ -327,5 +328,4 @@ async def splay(ctx: commands.Context, *, search: str):
     except Exception:
         setattr(vc, "loop", False)
 
-        
 bot.run(os.environ["TOKEN"])
