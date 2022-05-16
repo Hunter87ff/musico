@@ -1,4 +1,3 @@
-import os
 import nextcord
 from nextcord import Interaction, SlashOption, ChannelType
 from nextcord.abc import GuildChannel
@@ -7,7 +6,7 @@ from wavelink.ext import spotify
 import wavelink
 import datetime
 
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix='.')
 
 class ControlPanel(nextcord.ui.View):
     def __init__(self, vc, ctx):
@@ -327,6 +326,5 @@ async def splay(ctx: commands.Context, *, search: str):
         if vc.loop: return
     except Exception:
         setattr(vc, "loop", False)
-        
-token = os.environ['token']
-bot.run(token)
+
+bot.run(os.environ["TOKEN"])
