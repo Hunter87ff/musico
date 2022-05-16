@@ -1,5 +1,4 @@
 nextcord
 wavelink
-discord
 datetime
 spotify
